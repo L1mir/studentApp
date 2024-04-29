@@ -16,9 +16,8 @@ public class StudentDAO {
         return students;
     }
 
-    public Student saveStudent(Student student) {
+    public void saveStudent(Student student) {
         students.add(student);
-        return student;
     }
 
     public Student findByName(String name) {
