@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 @Repository
-public class StudentDAO {
+public class InMemoryStudentDAO {
 
     private final List <Student> students = new ArrayList<>();
 

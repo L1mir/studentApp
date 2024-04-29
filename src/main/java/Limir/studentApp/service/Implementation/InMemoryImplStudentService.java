@@ -4,15 +4,15 @@ import Limir.studentApp.model.Student;
 import Limir.studentApp.service.StudentService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import Limir.studentApp.repository.StudentDAO;
+import Limir.studentApp.repository.InMemoryStudentDAO;
 
 import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class ImplStudentService implements StudentService {
+public class InMemoryImplStudentService implements StudentService {
 
-    private final StudentDAO repository;
+    private final InMemoryStudentDAO repository;
 
     @Override
     public List<Student> findAllStudents() {
